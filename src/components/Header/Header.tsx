@@ -1,6 +1,12 @@
 import React, { FC } from "react";
+import { IHeaderProps } from "../../Interfaces";
 
-const Header: FC = ({ handleChange, addTask, deadline, task }) => {
+const Header: FC<IHeaderProps> = ({
+  handleChange,
+  addTask,
+  deadline,
+  task,
+}) => {
   return (
     <div className="header">
       <div className="inputContainer">
